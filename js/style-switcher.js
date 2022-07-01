@@ -1,3 +1,11 @@
+/*=============== LOADER ===============*/
+
+onload = () => {
+    const load = document.getElementById('load');
+    setTimeout(() =>{
+        load.style.display = 'none'
+    }, 2500);
+}
 // =============toggle style switcher ===========
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
 styleSwitcherToggle.addEventListener("click", ()=>{
@@ -21,14 +29,6 @@ function setActiveStyle(color) {
         }
     });
 }
-
-//================= Typing Animation=============
-var typed = new Typed(".typing", {
-    strings:["","Web Designer", "Web Developer", "Graphic Designer"],
-    typeSpeed:100,
-    BackSpeed:60,
-    loop:true
-});
 
 // ============= theme light and dark mode ===========
 
